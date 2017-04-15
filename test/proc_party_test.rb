@@ -16,4 +16,8 @@ class ProcPartyTest < TestCase
   def test_includers_dont_have_version
     assert_equal(false, Triple.const_defined?(:VERSION))
   end
+
+  def test_square_brackets_to_call
+    assert_equal(9, Triple.new[3])
+  end
 end
