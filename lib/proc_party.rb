@@ -10,4 +10,8 @@ module ProcParty
   def ===(*args)
     call(*args)
   end
+
+  def arity
+    to_proc.arity
+  end
 end

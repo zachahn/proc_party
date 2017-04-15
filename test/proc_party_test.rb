@@ -24,4 +24,8 @@ class ProcPartyTest < TestCase
   def test_case_equality_operator
     assert_equal(12, Triple.new === 4)
   end
+
+  def test_arity_is_arity_of_call
+    assert_equal(1, Triple.new.arity)
+  end
 end
