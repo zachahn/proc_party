@@ -2,11 +2,10 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "proc_party/version"
 
 Gem::Specification.new do |spec|
   spec.name = "proc_party"
-  spec.version = ProcParty::VERSION
+  spec.version = "0.1.0"
   spec.authors = ["Zach Ahn"]
   spec.email = ["engineering@zachahn.com"]
 

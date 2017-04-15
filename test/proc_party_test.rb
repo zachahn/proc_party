@@ -13,7 +13,7 @@ class ProcPartyTest < TestCase
     assert_equal([3, 6, 9], (1..3).map(&Triple.new))
   end
 
-  def test_it_does_something_useful
-    assert true
+  def test_includers_dont_have_version
+    assert_equal(false, Triple.const_defined?(:VERSION))
   end
 end
