@@ -30,4 +30,8 @@ module ProcParty
   def source_location
     method(:call).source_location
   end
+
+  def yield(*args)
+    call(*args)
+  end
 end

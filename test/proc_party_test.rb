@@ -58,4 +58,8 @@ class ProcPartyTest < TestCase
     assert_equal(Triple.instance_method(:call).source_location,
       Triple.new.source_location)
   end
+
+  def test_yield
+    assert_equal(6, Triple.new.yield(2))
+  end
 end
