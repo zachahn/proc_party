@@ -18,4 +18,8 @@ module ProcParty
   def curry(*arg)
     to_proc.curry(*arg)
   end
+
+  def lambda?
+    to_proc.lambda?
+  end
 end

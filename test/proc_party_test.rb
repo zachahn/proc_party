@@ -44,4 +44,8 @@ class ProcPartyTest < TestCase
   def test_curry_with_arg
     assert_equal(10, Summer.new.curry(4)[1, 2, 3, 4])
   end
+
+  def test_lambda?
+    assert_equal(true, Triple.new.lambda?)
+  end
 end
