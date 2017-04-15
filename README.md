@@ -76,4 +76,4 @@ The gem is available as open source under the terms of the
 
 [home]: https://github.com/zachahn/proc_party
 [rubygems]: https://rubygems.org
-[mit]: http://opensource.org/licenses/MIT
+[mit]: https://opensource.org/licenses/MIT
