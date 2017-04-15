@@ -14,4 +14,8 @@ module ProcParty
   def arity
     to_proc.arity
   end
+
+  def curry(*arg)
+    to_proc.curry(*arg)
+  end
 end
