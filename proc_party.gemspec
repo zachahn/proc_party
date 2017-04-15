@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = "proc_party"
-  spec.version = "0.1.0"
+  spec.version = "0.2.0"
   spec.authors = ["Zach Ahn"]
   spec.email = ["engineering@zachahn.com"]
 
