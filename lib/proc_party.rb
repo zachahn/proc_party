@@ -22,4 +22,8 @@ module ProcParty
   def lambda?
     to_proc.lambda?
   end
+
+  def parameters
+    method(:call).parameters
+  end
 end

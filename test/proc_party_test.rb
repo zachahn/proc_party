@@ -48,4 +48,9 @@ class ProcPartyTest < TestCase
   def test_lambda?
     assert_equal(true, Triple.new.lambda?)
   end
+
+  def test_parameters
+    assert_equal([%i(req n)], Triple.new.parameters)
+    assert_equal([%i(rest args)], Summer.new.parameters)
+  end
 end
