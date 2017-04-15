@@ -50,7 +50,7 @@ class ProcPartyTest < TestCase
   end
 
   def test_parameters
-    assert_equal([%i(req n)], Triple.new.parameters)
-    assert_equal([%i(rest args)], Summer.new.parameters)
+    assert_equal([%i[req n]], Triple.new.parameters)
+    assert_equal([%i[rest args]], Summer.new.parameters)
   end
 end
