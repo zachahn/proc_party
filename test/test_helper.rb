@@ -1,4 +1,4 @@
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'proc_party'
+$LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
+require "proc_party"
 
-require 'minitest/autorun'
+require "minitest/autorun"
