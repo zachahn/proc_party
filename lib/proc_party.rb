@@ -26,4 +26,8 @@ module ProcParty
   def parameters
     method(:call).parameters
   end
+
+  def source_location
+    method(:call).source_location
+  end
 end

@@ -53,4 +53,9 @@ class ProcPartyTest < TestCase
     assert_equal([%i[req n]], Triple.new.parameters)
     assert_equal([%i[rest args]], Summer.new.parameters)
   end
+
+  def test_source_location
+    assert_equal(Triple.instance_method(:call).source_location,
+      Triple.new.source_location)
+  end
 end
