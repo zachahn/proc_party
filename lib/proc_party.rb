@@ -6,4 +6,8 @@ module ProcParty
   def [](*args)
     call(*args)
   end
+
+  def ===(*args)
+    call(*args)
+  end
 end

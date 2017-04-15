@@ -20,4 +20,8 @@ class ProcPartyTest < TestCase
   def test_square_brackets_to_call
     assert_equal(9, Triple.new[3])
   end
+
+  def test_case_equality_operator
+    assert_equal(12, Triple.new === 4)
+  end
 end
