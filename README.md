@@ -2,8 +2,8 @@
 
 Ever had a class with just one method? Maybe it was named `#call` or `#process`?
 
-Ever wondered who you were (`(1..3).map(&Identity.new)`) or give everyone
-in your audience a car (`Guest.all.each(&GiveCar.new)`)?
+Ever wondered who you were (`(1..3).map(&Identity.new)`) or wanted to give
+everyone in your audience a car (`Guest.all.each(&GiveCar.new)`)?
 
 Proc party! 🎉 🎉 🎉
 
