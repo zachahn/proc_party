@@ -38,7 +38,7 @@ module ProcParty
   # @see https://ruby-doc.org/core/Proc.html#method-i-arity
   # @return [Integer] the arity of the #call method
   def arity
-    to_proc.arity
+    method(:call).arity
   end
 
   # @see https://ruby-doc.org/core/Proc.html#method-i-curry
