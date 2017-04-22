@@ -19,6 +19,9 @@ Style/AlignParameters:
 Style/AsciiComments:
   Enabled: false
 
+Style/CaseEquality:
+  Enabled: false
+
 Style/Documentation:
   Enabled: false
 
