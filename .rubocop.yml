@@ -22,9 +22,6 @@ Style/AsciiComments:
 Style/CaseEquality:
   Enabled: false
 
-Style/Documentation:
-  Enabled: false
-
 Style/EmptyLinesAroundBlockBody:
   Exclude:
     - db/schema.rb
