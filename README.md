@@ -33,19 +33,26 @@ class Identity
 end
 
 (1..3).map(&Identity.new) # => [1, 2, 3]
+```
 
 
+```ruby
 class GiveCar
   include ProcParty
 
+  def initialize(make, model)
+    @make = make
+    @model = model
+  end
+
   def call(guest)
-    guest.cars.push(Car.new)
+    car = Car.create(make: @make, model: @model)
+    guest.cars.push(car)
     guest.save
-    guest
   end
 end
 
-Guest.all.each(&GiveCar.new).each(&:celebrate!)
+Guest.all.select(&GiveCar.new("Pontiac", "G6")).each(&:celebrate!)
 ```
 
 
